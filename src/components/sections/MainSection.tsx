@@ -10,6 +10,7 @@ const Wrapper = styled.section`
   width: 100%;
   @media (max-width: 1000px) {
     height: 100vh;
+    overflow: hidden;
   }
   aspect-ratio: 16/9;
   position: relative;
@@ -23,7 +24,6 @@ const BgImage = styled.div<{ $imagePath: string }>`
   width: 100%;
   height: 100%;
   @media (max-width: 1000px) {
-    overflow: hidden;
     width: 1240px;
     height: 55vh;
   }
