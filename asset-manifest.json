@@ -1,10 +1,22 @@
 {
   "files": {
-    "main.js": "/ceylon_publicing/static/js/main.32d5e674.js",
+    "main.js": "/ceylon_publicing/static/js/main.9aa9a08e.js",
+    "static/media/hotel_14.png": "/ceylon_publicing/static/media/hotel_14.62741676f0a83a7266cb.png",
+    "static/media/main_img.jpg": "/ceylon_publicing/static/media/main_img.21b1e15429d396a78edf.jpg",
+    "static/media/member.jpg": "/ceylon_publicing/static/media/member.fbda6442bc0ff4b0ffbf.jpg",
+    "static/media/hotel_12.png": "/ceylon_publicing/static/media/hotel_12.db913faf8e8a64881b66.png",
+    "static/media/hotel_13.png": "/ceylon_publicing/static/media/hotel_13.e8c8c54cc0b32b105d4b.png",
+    "static/media/promotion_bg.jpg": "/ceylon_publicing/static/media/promotion_bg.1976f85373eb1b05e97b.jpg",
+    "static/media/pic_01.png": "/ceylon_publicing/static/media/pic_01.304e48c2f2eeb83580f7.png",
+    "static/media/img_france.jpeg": "/ceylon_publicing/static/media/img_france.d8e8653ce20e6dd47eef.jpeg",
+    "static/media/img_bali.jpg": "/ceylon_publicing/static/media/img_bali.6ffd78111137a647df1d.jpg",
+    "static/media/img_mauritius.jpg": "/ceylon_publicing/static/media/img_mauritius.64332a88ac7562967477.jpg",
+    "static/media/img_guam.jpg": "/ceylon_publicing/static/media/img_guam.6ca33c926d2a532db512.jpg",
+    "static/media/img_aus.jpg": "/ceylon_publicing/static/media/img_aus.f9bf39ddf6acacac1543.jpg",
     "index.html": "/ceylon_publicing/index.html",
-    "main.32d5e674.js.map": "/ceylon_publicing/static/js/main.32d5e674.js.map"
+    "main.9aa9a08e.js.map": "/ceylon_publicing/static/js/main.9aa9a08e.js.map"
   },
   "entrypoints": [
-    "static/js/main.32d5e674.js"
+    "static/js/main.9aa9a08e.js"
   ]
 }
