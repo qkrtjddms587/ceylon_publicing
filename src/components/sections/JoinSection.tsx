@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import memberImg from "../../images/member.jpg";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -52,7 +53,7 @@ const Wrapper = styled.div`
       font-size: 1.2vw;
       font-weight: 400;
       width: 70%;
-      @media (max-width: 1000px) {
+      @media (max-width: 500px) {
         width: 100%;
         letter-spacing: 0;
         font-size: 13px;
@@ -69,12 +70,12 @@ const Wrapper = styled.div`
       font-size: 1.2vw;
       color: rgba(254, 254, 254, 1);
       margin-top: 4vw;
-      @media (max-width: 1000px) {
+      @media (max-width: 500px) {
         font-size: 13px;
         padding: 10px 20px;
       }
       svg {
-        @media (max-width: 1000px) {
+        @media (max-width: 500px) {
           height: 15px;
           margin-bottom: 1px;
         }
@@ -90,7 +91,7 @@ export default function JoinSection() {
   return (
     <Wrapper>
       <div className="join__image__wrapper">
-        <img src="" />
+        <img src={memberImg} alt="temp" />
       </div>
       <div className="join__info__wrapper">
         <div className="join__info">

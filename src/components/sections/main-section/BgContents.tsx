@@ -10,8 +10,8 @@ interface BgContentsProps {
 const Wrapper = styled.div`
   display: flex;
   color: white;
-  margin-top: 3vw;
-  margin-left: 1vw;
+  margin-top: 22vw;
+  margin-left: 2.5vw;
   .web__wrapper {
     @media (max-width: 1000px) {
       display: none;

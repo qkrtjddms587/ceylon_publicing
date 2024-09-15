@@ -3,10 +3,15 @@ import PromotionHeader from "./promotion-section/PromotionHeader";
 import PromotionCard from "./promotion-section/PromotionCard";
 import MobileCardWrapper from "../common/MobileCardWrapper";
 import RecommendCard from "./recommend-section/RecommendCard";
+import promotionBgImage from "../../images/promotion_bg.jpg";
+import hotel1 from "../../images/resort/hotel_14.png";
+import hotel2 from "../../images/resort/hotel_13.png";
+import hotel3 from "../../images/resort/hotel_12.png";
 
-const Wrapper = styled.section`
-  background-color: royalblue;
+const Wrapper = styled.section<{ $imagePath: string }>`
+  background-image: url(${({ $imagePath }) => $imagePath});
   padding: 5vw 10vw;
+  background-size: cover;
   @media (max-width: 1000px) {
     padding: 60px 0;
   }
@@ -57,10 +62,11 @@ export default function PromotionSection() {
       price: 1590000,
       priceDesc: "1인 요금",
       dueDate: "2024-12-31",
-      imagePath: "",
-      location: "태국/푸켓",
+      imagePath: hotel1,
+      location: "푸켓",
       rating: 4.72,
       resort: "반얀트리",
+      tourId: 3,
     },
     {
       id: 1,
@@ -69,10 +75,11 @@ export default function PromotionSection() {
       price: 1590000,
       priceDesc: "1인 요금",
       dueDate: "2024-12-31",
-      imagePath: "",
-      location: "태국/푸켓",
+      imagePath: hotel2,
+      location: "푸켓",
       rating: 4.72,
       resort: "반얀트리",
+      tourId: 3,
     },
     {
       id: 2,
@@ -81,14 +88,15 @@ export default function PromotionSection() {
       price: 1590000,
       priceDesc: "1인 요금",
       dueDate: "2024-12-31",
-      imagePath: "",
-      location: "태국/푸켓",
+      imagePath: hotel3,
+      location: "푸켓",
       rating: 4.72,
       resort: "반얀트리",
+      tourId: 3,
     },
   ];
   return (
-    <Wrapper>
+    <Wrapper $imagePath={promotionBgImage}>
       <PromotionHeader
         titles={["Best", "시즌", "추천 프로모션"]}
         descriptions={["실론투어의 여행전문가가", "추천해드리는 상품"]}
@@ -102,7 +110,13 @@ export default function PromotionSection() {
       <MobileCardWrapper>
         {promotionObjs.map((obj) => (
           <div key={obj.id} className="promotion__mobile__card__wrapper">
-            <RecommendCard {...obj} />
+            <RecommendCard
+              location={obj.location}
+              rating={obj.rating}
+              imagePath={obj.imagePath}
+              tourId={obj.tourId}
+              title={obj.resort}
+            />
           </div>
         ))}
       </MobileCardWrapper>

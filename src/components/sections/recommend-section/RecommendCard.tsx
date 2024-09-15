@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import RatingBoard from "./RatingBoard";
+import { formatKrDate, getTourData } from "../../../utilies";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -9,7 +10,7 @@ const Wrapper = styled.div`
   margin-bottom: 10px;
   .recommend__image__wrapper {
     width: 100%;
-    aspect-ratio: 0.85;
+    aspect-ratio: 1.1;
     @media (max-width: 1000px) {
       aspect-ratio: 1.05;
     }
@@ -51,33 +52,52 @@ const Wrapper = styled.div`
       }
     }
   }
+  .promotion__duedate {
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    @media (max-width: 1000px) {
+      font-size: 14px;
+    }
+    color: rgba(119, 119, 119, 1);
+  }
 `;
 
 interface RecommendCardProps {
   rating: number;
-  resort: string;
+  title: string;
   imagePath: string;
   location: string;
+  promotionDueDate?: string;
+  tourId: number;
 }
 
 export default function RecommendCard({
-  resort,
+  title,
+  tourId,
   imagePath,
   location,
   rating,
+  promotionDueDate,
 }: RecommendCardProps) {
   return (
     <Wrapper>
       <div className="recommend__image__wrapper">
-        <img src={imagePath} />
+        <img src={imagePath} alt="temp" />
       </div>
-      <span className="recommend__card__title">{resort}</span>
+      <span className="recommend__card__title">{title}</span>
       <div className="recommend__card__info">
-        <span>{location}</span>
+        <span>
+          {getTourData(tourId).selectedTour.title}/{location}
+        </span>
         <div className="recommend__rating__wrapper">
           <RatingBoard rating={rating} />
         </div>
       </div>
+      {promotionDueDate && (
+        <span className="promotion__duedate">{`[프로모션 기간 ${formatKrDate(
+          promotionDueDate
+        )}까지]`}</span>
+      )}
     </Wrapper>
   );
 }

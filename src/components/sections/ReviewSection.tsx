@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import ReviewHeader from "./review-section/ReviewHeader";
 import ReviewCard from "./review-section/ReviewCard";
+import reviewImg1 from "../../images/review/pic_01.png";
 
 const Wrapper = styled.section`
   display: flex;
@@ -66,7 +67,7 @@ export default function ReviewSection() {
   const reviewObjs = [
     {
       id: 0,
-      imagePath: "",
+      imagePath: reviewImg1,
       title: "행복했던 하와이 허니문",
       description:
         "너무 좋았던  허니문을 실론투어에서 다녀왔어요 잊을 수 없는 여행... ",
@@ -74,7 +75,7 @@ export default function ReviewSection() {
     },
     {
       id: 1,
-      imagePath: "",
+      imagePath: reviewImg1,
       title: "행복했던 하와이 허니문",
       description:
         "너무 좋았던  허니문을 실론투어에서 다녀왔어요 잊을 수 없는 여행... ",
@@ -82,7 +83,7 @@ export default function ReviewSection() {
     },
     {
       id: 2,
-      imagePath: "",
+      imagePath: reviewImg1,
       title: "행복했던 하와이 허니문",
       description:
         "너무 좋았던  허니문을 실론투어에서 다녀왔어요 잊을 수 없는 여행... ",
@@ -90,7 +91,7 @@ export default function ReviewSection() {
     },
     {
       id: 3,
-      imagePath: "",
+      imagePath: reviewImg1,
       title: "행복했던 하와이 허니문",
       description:
         "너무 좋았던  허니문을 실론투어에서 다녀왔어요 잊을 수 없는 여행... ",
@@ -98,7 +99,7 @@ export default function ReviewSection() {
     },
     {
       id: 4,
-      imagePath: "",
+      imagePath: reviewImg1,
       title: "행복했던 하와이 허니문",
       description:
         "너무 좋았던  허니문을 실론투어에서 다녀왔어요 잊을 수 없는 여행... ",
@@ -106,7 +107,7 @@ export default function ReviewSection() {
     },
     {
       id: 5,
-      imagePath: "",
+      imagePath: reviewImg1,
       title: "행복했던 하와이 허니문",
       description:
         "너무 좋았던  허니문을 실론투어에서 다녀왔어요 잊을 수 없는 여행... ",

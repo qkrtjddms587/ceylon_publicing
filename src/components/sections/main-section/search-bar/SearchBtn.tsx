@@ -6,8 +6,8 @@ export interface SearchBtnsProps {
 }
 
 const Wrapper = styled.button`
-  width: 250px;
-  height: 48px;
+  width: 100%;
+  height: 100%;
   background-color: #2fb4e2;
   border: none;
   border-radius: 10px;

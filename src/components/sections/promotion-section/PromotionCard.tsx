@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import DueDateBox from "./DueDateBox";
+import { formatKrDate } from "../../../utilies";
 
 const Wrapper = styled.div`
   .promotion__image__wrapper {
@@ -63,20 +64,11 @@ export default function PromotionCard({
   const formatPriceWon = (price: number) => {
     return `₩${price.toLocaleString("ko-KR")}`;
   };
-  const formatKrDate = (date: string) => {
-    const dateParts = date.split("-");
-    if (dateParts.length !== 3) {
-      throw new Error("Invalid date format. Expected format: YYYY-MM-DD");
-    }
-    const year = dateParts[0];
-    const month = +dateParts[1];
-    const day = +dateParts[2];
-    return `${year}년 ${month}월 ${day}일`;
-  };
+
   return (
     <Wrapper>
       <div className="promotion__image__wrapper">
-        <img src={imagePath} />
+        <img src={imagePath} alt="temp" />
       </div>
       <div className="promotion__info__wrapper">
         <div className="promotion__info">

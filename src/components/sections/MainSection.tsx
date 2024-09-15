@@ -5,6 +5,10 @@ import BgContents from "./main-section/BgContents";
 import SearchBar from "./main-section/SearchBar";
 import BgSelectBtns from "./main-section/BgSelectBtns";
 import MobileSearchBar from "./main-section/MobileSearchBar";
+import mainImg from "../../images/main_img.jpg";
+import mauritiusImg from "../../images/img_mauritius.jpg";
+import ausImg from "../../images/img_aus.jpg";
+import guamImg from "../../images/img_guam.jpg";
 
 const Wrapper = styled.section`
   width: 100%;
@@ -20,18 +24,21 @@ const Wrapper = styled.section`
 `;
 
 const BgImage = styled.div<{ $imagePath: string }>`
-  background-color: ${({ $imagePath }) => $imagePath};
   width: 100%;
   height: 100%;
   @media (max-width: 1000px) {
     width: 1240px;
     height: 55vh;
+    top: -18px;
   }
-  background-image: ${({ $imagePath }) => $imagePath};
+  background-image: url(${({ $imagePath }) => $imagePath});
   position: absolute;
   background-size: cover;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
+  transition: background-image 0.2s ease-in;
 `;
 
 const Contents = styled.div`
@@ -50,22 +57,22 @@ export default function MainSection() {
     {
       title: "사무이 럭셔리 콜라보",
       subtitle: "콘래드2박 + 반얀트리2박",
-      imagePath: "gray",
+      imagePath: mainImg,
     },
     {
       title: "사무이 럭셔리 콜라보",
       subtitle: "콘래드2박 + 반얀트리2박",
-      imagePath: "blue",
+      imagePath: mauritiusImg,
     },
     {
       title: "사무이 럭셔리 콜라보",
       subtitle: "콘래드2박 + 반얀트리2박",
-      imagePath: "green",
+      imagePath: ausImg,
     },
     {
       title: "사무이 럭셔리 콜라보",
       subtitle: "콘래드2박 + 반얀트리2박",
-      imagePath: "yellow",
+      imagePath: guamImg,
     },
   ];
   return (

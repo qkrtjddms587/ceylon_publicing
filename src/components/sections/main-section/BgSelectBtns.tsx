@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   }
   position: absolute;
   bottom: 10vw;
-  left: 1vw;
+  left: 2.5vw;
   aspect-ratio: 4;
   color: #ffffff;
   display: flex;

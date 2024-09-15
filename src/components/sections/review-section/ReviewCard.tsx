@@ -1,9 +1,10 @@
 import { styled } from "styled-components";
 
 const Wrapper = styled.div<{ $imagePath: string }>`
-  background-color: gray;
   background-image: url(${({ $imagePath }) => $imagePath});
+  background-size: cover;
   width: 100%;
+  height: 100%;
   @media (max-width: 1000px) {
     background-image: none;
     background-color: white;
@@ -41,13 +42,18 @@ const Wrapper = styled.div<{ $imagePath: string }>`
   .review__image__wrapper {
     display: none;
     @media (max-width: 1000px) {
+      overflow: hidden;
       flex: none;
       display: block;
       width: 145px;
       height: 126px;
-      background-color: gray;
       border-radius: 7px;
       margin-left: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 `;
@@ -75,7 +81,7 @@ export default function ReviewCard({
         </div>
       </div>
       <div className="review__image__wrapper">
-        <img />
+        <img src={imagePath} alt="temp" />
       </div>
     </Wrapper>
   );
