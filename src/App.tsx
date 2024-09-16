@@ -30,7 +30,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     user-select:none;
     color: rgb(29,29,31);
-    letter-spacing: -1px;
     background-color: white;
     color: white;
     line-height: 1.2;

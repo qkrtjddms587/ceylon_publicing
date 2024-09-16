@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
-import { getHotelData, getHotelDataById } from "../../utilies";
+import { getHotelDataById } from "../../utilies";
 import HotelHeaderSection from "../sections/HotelHeaderSection";
+import HotelInfoSection from "../sections/HotelInfoSection";
 
 export default function HotelPage() {
   const { hotelId } = useParams();
@@ -9,6 +10,7 @@ export default function HotelPage() {
   return (
     <div>
       <HotelHeaderSection {...HotelObjs} />
+      <HotelInfoSection {...HotelObjs} />
     </div>
   );
 }

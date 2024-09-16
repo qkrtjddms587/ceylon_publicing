@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     justify-content: center;
     color: rgba(187, 187, 187, 1);
     border-bottom: 0.2vw solid rgba(187, 187, 187, 1);
-    font-size: 1.5vw;
+    font-size: 1vw;
     padding-bottom: 0.5vw;
 
     transition: background-color 0.2s ease-in, color 0.2s ease-in;

@@ -259,7 +259,7 @@ export const getHotelDataById = (id: number) => {
       mainBgImage: saintMainImage,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -268,7 +268,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -288,7 +288,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -297,7 +297,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -317,7 +317,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -326,7 +326,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -346,7 +346,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -355,7 +355,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -375,7 +375,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -384,7 +384,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -404,7 +404,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -413,7 +413,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -433,7 +433,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -442,7 +442,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
@@ -462,7 +462,7 @@ export const getHotelDataById = (id: number) => {
       categoryId: 0,
       desc: "2017년 새롭게 단장을 마치고 모던 럭셔리를 지향하는 호텔로 거듭났습니다. 모든 객실에서 지쿠지와 개인용 풀장이 설치되어있는 것이 특징이며, 하얗고 깔끔한 인테리어는 산토리니만의 감성을 느끼기에 안성맞춤입니다.",
       info: {
-        image: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
+        images: [infoImg0, infoImg1, infoImg2, infoImg3, infoImg4],
         benefit: [
           "매일 2~6인 조식",
           "BBQ 1회 2인 씨푸드 디너뷔페(생맥주 무제한 제공)",
@@ -471,7 +471,7 @@ export const getHotelDataById = (id: number) => {
         ],
         roomType: ["클리프 오션뷰", "오션뷰", "오션뷰 풀빌라"],
         locDetail: [
-          "주소:발리 쿠타 Sauthon Road",
+          "주소 : 발리 쿠타 Sauthon Road",
           "28km - 발리국제공항",
           "20km - 사원",
         ],
