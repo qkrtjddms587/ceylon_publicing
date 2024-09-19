@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import MainPage from "./components/pages/MainPage";
 import { Outlet } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`

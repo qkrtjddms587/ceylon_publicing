@@ -1,12 +1,7 @@
 import { styled } from "styled-components";
-import PromotionHeader from "./promotion-section/PromotionHeader";
-import PromotionCard from "./promotion-section/PromotionCard";
 import MobileCardWrapper from "../common/MobileCardWrapper";
 import RecommendCard from "./recommend-section/RecommendCard";
 import promotionBgImage from "../../images/promotion_bg.jpg";
-import hotel1 from "../../images/resort/hotel_14.png";
-import hotel2 from "../../images/resort/hotel_13.png";
-import hotel3 from "../../images/resort/hotel_12.png";
 import SectionHeader from "../common/SectionHeader";
 import { getHotelData } from "../../utilies";
 

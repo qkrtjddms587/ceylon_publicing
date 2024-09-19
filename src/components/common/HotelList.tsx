@@ -36,6 +36,7 @@ export default function HotelList({ selectedHotelObjs }: HotelListProps) {
   return (
     <Wrapper>
       <SubCategorySelector
+        type="sidebar"
         currentTitle={categoryTitle}
         setCurrentTitle={setCategoryTitle}
         categories={categoryObjs}

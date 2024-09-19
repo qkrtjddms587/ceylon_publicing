@@ -104,7 +104,7 @@ export default function InfoItems({
           {roomType.map((item, idx) => (
             <li key={idx}>
               <label htmlFor={item}>
-                <input type="radio" id={item} />
+                <input type="radio" id={item} checked={idx === 0} />
                 <span className={idx === 0 ? "select__room__type" : ""}>
                   {item}
                 </span>

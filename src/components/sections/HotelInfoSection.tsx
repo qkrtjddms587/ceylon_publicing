@@ -4,9 +4,13 @@ import { useState } from "react";
 import ImageSelector from "../common/ImageSelector";
 import InfoItems from "../common/InfoItem";
 import HotelInfoImage from "../common/HotelInfoImage";
+import PackageItemList from "../common/PackageItemList";
 
 type HotelInformation = {
-  images: string[];
+  images: {
+    mainImage: string;
+    roomImage: { roomType: number; image: string }[];
+  };
   benefit: string[];
   roomType: string[];
   locDetail: string[];
@@ -14,7 +18,8 @@ type HotelInformation = {
 
 interface HotelInfoSectionProps {
   info: HotelInformation;
-  packageId: number[];
+  id: number;
+  title: string;
 }
 
 const Wrapper = styled.section`
@@ -23,7 +28,8 @@ const Wrapper = styled.section`
 
 export default function HotelInfoSection({
   info,
-  packageId,
+  id,
+  title,
 }: HotelInfoSectionProps) {
   const [categoryId, setCategoryId] = useState(0);
   const categoryObjs = [
@@ -43,9 +49,10 @@ export default function HotelInfoSection({
           <ImageSelector images={info.images} />
           <InfoItems {...info} />
           <HotelInfoImage />
+          <PackageItemList hotelId={id} title={title} numberOfPackage={2} />
         </div>
       ) : (
-        ""
+        <PackageItemList hotelId={id} title={title} />
       )}
     </Wrapper>
   );

@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { styled } from "styled-components";
+import ShowAllImage from "./ShowAllImage";
 
 interface ImageSelectorProps {
-  images: string[];
+  images: {
+    mainImage: string;
+    roomImage: { roomType: number; image: string }[];
+  };
 }
 
 const Wrapper = styled.div`
@@ -43,6 +48,7 @@ const Wrapper = styled.div`
     padding: 0.5vw 1vw;
     gap: 0.2vw;
     transition: background-color 0.2s ease-in;
+    color: rgba(255, 255, 255, 1);
     cursor: pointer;
     svg {
       width: 1vw;
@@ -54,16 +60,18 @@ const Wrapper = styled.div`
 `;
 
 export default function ImageSelector({ images }: ImageSelectorProps) {
+  const [onModal, setOnModal] = useState(false);
   return (
     <Wrapper>
+      {onModal && <ShowAllImage images={images} setOnModal={setOnModal} />}
       <div className="images__grid__wrapper">
-        {images.slice(0, 3).map((image, idx) => (
+        {images.roomImage.slice(0, 3).map((image, idx) => (
           <div key={idx}>
-            <img src={images[idx]} alt="temp" />
+            <img src={image.image} alt="temp" />
           </div>
         ))}
       </div>
-      <div className="show__all__btn">
+      <div className="show__all__btn" onClick={() => setOnModal(true)}>
         <span>호텔 사진 모두 보기</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

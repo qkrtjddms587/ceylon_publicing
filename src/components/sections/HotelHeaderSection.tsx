@@ -10,6 +10,7 @@ interface HotelHeaderSectionProps {
   location: string;
   tourId: number;
   desc: string;
+  type?: "basic" | "mini";
 }
 
 const Wrapper = styled.section`
@@ -65,6 +66,7 @@ const Wrapper = styled.section`
 `;
 
 export default function HotelHeaderSection({
+  type = "basic",
   title,
   subtitle,
   mainBgImage,
@@ -87,7 +89,7 @@ export default function HotelHeaderSection({
             <RatingBoard rating={rating} />
           </div>
         </div>
-        <span className="header__desc">{desc}</span>
+        {type === "basic" && <span className="header__desc">{desc}</span>}
       </div>
     </Wrapper>
   );

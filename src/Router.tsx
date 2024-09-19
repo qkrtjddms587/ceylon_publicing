@@ -4,6 +4,8 @@ import MainPage from "./components/pages/MainPage";
 import ResortPage from "./components/pages/ResortPage";
 import ResortDetailPage from "./components/pages/ResortDetailPage";
 import HotelPage from "./components/pages/HotelPage";
+import PackagePage from "./components/pages/PackagePage";
+import ShowAllImage from "./components/common/ShowAllImage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "hotel/:hotelId",
         element: <HotelPage />,
+      },
+      {
+        path: "package/:packageId",
+        element: <PackagePage />,
       },
     ],
   },

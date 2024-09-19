@@ -3,12 +3,10 @@ import BgSelector from "./main-section/BgSelector";
 import styled from "styled-components";
 import BgContents from "./main-section/BgContents";
 import BgSelectBtns from "./main-section/BgSelectBtns";
-import MobileSearchBar from "./main-section/MobileSearchBar";
 import mainImg0 from "../../images/resort/hotel_07.png";
 import mainImg1 from "../../images/img_mauritius.jpg";
 import mainImg2 from "../../images/resort/hotel_13.png";
 import mainImg3 from "../../images/img_bali.jpg";
-import ResortSearchBar from "./resort-main-section/ResortSearchBar";
 
 const Wrapper = styled.section`
   width: 100%;

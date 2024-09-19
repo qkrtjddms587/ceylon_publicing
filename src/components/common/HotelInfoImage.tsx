@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 const Wrapper = styled.div`
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 4vw auto;
   max-width: 1200px;
   aspect-ratio: 2.4;
   background-color: rgba(217, 217, 217, 1);

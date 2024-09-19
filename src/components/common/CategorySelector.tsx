@@ -1,4 +1,3 @@
-import { Dispatch } from "react";
 import { styled } from "styled-components";
 import { cls } from "../../utilies";
 
@@ -15,7 +14,7 @@ export interface CategorySelectorProps {
 }
 
 const Wrapper = styled.div`
-  margin: 0 auto 3vw auto;
+  margin: 0 auto;
   width: 80%;
   max-width: 1200px;
   display: grid;

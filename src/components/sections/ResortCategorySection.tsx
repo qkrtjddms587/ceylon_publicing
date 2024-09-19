@@ -2,7 +2,6 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import CategorySelector from "../common/CategorySelector";
 import { HotelObj } from "../../utilies";
-import RecommendCard from "./recommend-section/RecommendCard";
 import HotelList from "../common/HotelList";
 
 interface ResortCategorySectionProps {
